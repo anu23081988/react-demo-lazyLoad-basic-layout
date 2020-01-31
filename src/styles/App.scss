@@ -1,0 +1,60 @@
+.app-container{
+  display: -webkit-flex;display: -ms-flexbox; display: flex;
+  .content {
+   width: 100%;
+   text-align: justify;
+   padding: 0 20px 0 10px;
+   height: 85vh;
+   overflow: auto;
+  }
+  .sidebar{
+    background-color: #989898;
+    width: 15%;
+
+    ul {
+      list-style-type: none;
+      margin: 0px;
+      padding:0px;
+      
+      li:not(:first-child) {
+        padding-top: 10px;
+        border-top: 1px solid #686868;
+      }
+      li {
+        padding: 15px 0 10px 10px;
+      }
+      li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+      }
+      li:hover {
+        background-color: #d7d7d7;
+      }
+      
+    }
+  }
+  .active {
+    background-color: #707070;
+  }
+}
+header{
+  display: flex;
+  background-color: #484848;
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+footer {
+  display: flex;
+  background-color:	#484848;
+  height: 5vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: white;
+}
+
+
